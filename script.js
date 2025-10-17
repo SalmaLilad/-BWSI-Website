@@ -37,6 +37,8 @@ let idx = 0, ptr = 0, rev = false;
 const tw = document.getElementById('typewriter');
 
 function tick() {
+  if (!active) return;
+
   const text = phrases[idx];
   if (!rev) {
     ptr++;
@@ -52,6 +54,10 @@ function tick() {
   setTimeout(tick, rev ? 50 : 80);
 }
 tick();
+
+setTimeout(() => {
+  active = false;
+}, 60000);
 
 // =======================
 // 🧪 Projects Data
