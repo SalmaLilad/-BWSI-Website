@@ -151,7 +151,7 @@ section{padding:32px 24px}
 .proj-body{padding:14px}
 .tags{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}
 .tag{
-  font-size:11px;padding:4px 8px;border-radius:999px;
+  font-size:11px;padding:4px 8px;border-radius:990px;
   background:rgba(255,255,255,.08);
   border:1px solid var(--glass-brd);
 }
