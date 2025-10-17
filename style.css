@@ -35,6 +35,9 @@ body{
   color:var(--text);
   line-height:1.6;
   letter-spacing:.2px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  opacity: 0;
+  animation: fadeInPage 0.8s ease forwards;
 }
 
 a{color:inherit;text-decoration:none}
@@ -192,4 +195,7 @@ footer{padding:32px 24px;color:var(--muted);border-top:1px solid var(--glass-brd
   .grid{grid-template-columns:1fr}
   .links{grid-template-columns:1fr}
   .nav-wrap{flex-wrap:wrap}
+}
+@keyframes fadeInPage {
+  to { opacity: 1; }
 }
