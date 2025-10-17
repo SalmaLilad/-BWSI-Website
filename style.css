@@ -107,12 +107,12 @@ section{padding:32px 24px}
 .section-head h2{margin:4px 0 0;font-size:24px}
 
 /* ABOUT */
-.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:start}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px;align-items:start}
 .card{
   border:1px solid var(--glass-brd);
   background:var(--panel);
-  border-radius:16px;
-  padding:18px;
+  border-radius:10px;
+  padding:12px;
   box-shadow:var(--shadow);
 }
 .profile{
