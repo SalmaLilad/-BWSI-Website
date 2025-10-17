@@ -125,6 +125,8 @@ section{padding:32px 24px}
   border:1px solid var(--glass-brd);
   background:var(--glass);
   cursor:pointer;font-size:13px;
+  transition:all 0.2s ease;
+  color:var(--text);
 }
 .chip.active{
   background: linear-gradient(180deg, rgba(139,69,19,.85), rgba(139,69,19,.65));
