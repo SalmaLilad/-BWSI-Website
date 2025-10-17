@@ -64,8 +64,8 @@ a{color:inherit;text-decoration:none}
   border:1px solid var(--glass-brd);
   background:var(--glass);
   color:var(--text);
-  padding:8px 12px;
-  border-radius:12px;
+  padding:8px 10px;
+  border-radius:10px;
   cursor:pointer;
   transition:transform .1s ease, background .2s ease, border-color .2s ease;
   text-decoration:none;
