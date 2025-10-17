@@ -87,7 +87,7 @@ a{color:inherit;text-decoration:none}
   background:linear-gradient(90deg,var(--brand),var(--brand-2));
   -webkit-background-clip:text;background-clip:text;color:transparent;
 }
-.kicker{color:var(--muted);max-width:60ch;}
+.kicker{color:var(--muted);max-width:60ch}
 .cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
 .hero-card{
   border:1px solid var(--glass-brd);
@@ -105,7 +105,7 @@ section{padding:32px 24px}
 .section-head h2{margin:4px 0 0;font-size:24px}
 
 /* ABOUT */
-.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-self:start}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:start}
 .card{
   border:1px solid var(--glass-brd);
   background:var(--panel);
