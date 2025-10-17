@@ -119,7 +119,7 @@ section{padding:32px 24px}
 }
 
 /* PROJECTS */
-.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;}
 .chip{
   padding:8px 12px;border-radius:999px;
   border:1px solid var(--glass-brd);
