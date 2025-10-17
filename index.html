@@ -5,24 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0f0f13" />
   <title>Applied Engineering & AI · Beaver Works Portfolio</title>
-  <meta name="description" content="Portfolio template for MIT Beaver Works Applied Engineering & AI track." />
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" as="style" onload="this.rel='stylesheet'">
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="A polished, modern portfolio template for MIT Beaver Works students in the Applied Engineering & AI track." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <!-- NAV -->
   <nav class="nav">
     <div class="nav-wrap container">
-      <a class="brand" href="#top">
-        <div class="logo">AI</div>
+      <a class="brand" href="#top" aria-label="Home">
+        <div class="logo" aria-hidden="true">AI</div>
         <div>
           <div class="title">Beaver Works</div>
           <div class="subtitle">Applied Engineering & AI</div>
         </div>
       </a>
       <div class="nav-actions">
-        <button class="btn" id="themeToggle">🌗 Theme</button>
+        <button class="btn" id="themeToggle" aria-label="Toggle theme">🌗 Theme</button>
         <a class="btn btn-primary" href="#projects">🚀 Projects</a>
       </div>
     </div>
@@ -35,17 +35,16 @@
         <span class="badge">⚡ Student Portfolio Template</span>
         <h1 class="h1">
           Hi, I'm <span id="name">Your Name</span> — building
-          <span class="gradient" id="typewriter"></span>
+          <span class="gradient" id="typewriter" aria-live="polite"></span>
         </h1>
-        <p class="kicker">Welcome to my Beaver Works portfolio. Here you’ll find my projects and hands-on outputs from the <strong>Applied Engineering & AI</strong> track — from Arduino builds to ML demos.</p>
+        <p class="kicker">Welcome to my Beaver Works portfolio. Here you’ll find my projects, labs, and hands‑on outputs from the <strong>Applied Engineering & AI</strong> track — from Arduino builds and data science notebooks to web apps and ML experiments.</p>
         <div class="cta">
           <a class="btn btn-primary" href="#about">📘 About</a>
           <a class="btn" href="#links">🔗 Outputs</a>
           <a class="btn" href="#projects">🧪 Experiments</a>
         </div>
       </div>
-
-      <div class="hero-card">
+      <div class="hero-card fade-in" style="animation-delay:.15s">
         <div class="mini">Starter checklist</div>
         <div class="hero-list">
           <div class="hero-item">✅ GitHub profile set up</div>
@@ -69,15 +68,15 @@
     </div>
     <div class="about">
       <div class="card">
-        <img class="profile" src="profile.jpg" alt="Profile photo" />
-        <p class="mini">Replace <code>profile.jpg</code> with your image.</p>
+        <img class="profile" src="profile.jpg" alt="Profile photo of student" />
+        <p class="mini" style="margin-top:10px">Replace <code>profile.jpg</code> with your image.
       </div>
       <div class="card">
-        <p>I'm a Beaver Works student focusing on <strong>applied engineering</strong> and <strong>AI</strong>. I build prototypes, dashboards, and machine-learning demos.</p>
+        <p>I'm a Beaver Works student focusing on <strong>applied engineering</strong> and <strong>AI</strong>. I enjoy building things end‑to‑end: hardware prototypes, interactive dashboards, and machine learning demos. This site showcases a few of my favorite projects and learning artifacts.</p>
         <ul>
-          <li>🧰 Skills: Python, JS, Arduino, Data Viz</li>
-          <li>🧪 Interests: Edge AI, Robotics, Earth Data</li>
-          <li>🎯 Goal: Ship 3 polished projects this term</li>
+          <li>🧰 Skills: Python, JavaScript, Arduino, Data Viz, Git</li>
+          <li>🧪 Interests: Edge AI, Robotics, Earth Data, Health Tech</li>
+          <li>🎯 Goal this term: Ship 3 polished project demos</li>
         </ul>
       </div>
     </div>
@@ -90,18 +89,18 @@
         <div class="section-title">Projects & Labs</div>
         <h2>Featured Work</h2>
       </div>
-      <div class="filters">
-        <button class="chip active" data-filter="all">All</button>
-        <button class="chip" data-filter="ai">AI/ML</button>
-        <button class="chip" data-filter="hw">Arduino/EE</button>
-        <button class="chip" data-filter="web">Web</button>
-        <button class="chip" data-filter="data">Data</button>
+      <div class="filters" role="tablist" aria-label="Project filters">
+        <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-filter="ai" role="tab">AI/ML</button>
+        <button class="chip" data-filter="hw" role="tab">Arduino/EE</button>
+        <button class="chip" data-filter="web" role="tab">Web</button>
+        <button class="chip" data-filter="data" role="tab">Data</button>
       </div>
     </div>
-    <div class="grid" id="projectsGrid"></div>
+    <div class="grid" id="projectsGrid" aria-live="polite"></div>
   </section>
 
-  <!-- OUTPUTS -->
+  <!-- OUTPUT LINKS -->
   <section id="links" class="container">
     <div class="section-head">
       <div>
@@ -110,17 +109,163 @@
       </div>
     </div>
     <div class="links">
-      <a class="link-card" href="https://github.com/yourgithub" target="_blank"><strong>GitHub</strong><div class="mini">Repositories & commits</div></a>
-      <a class="link-card" href="resume.pdf" target="_blank"><strong>Resume (PDF)</strong><div class="mini">Latest version</div></a>
-      <a class="link-card" href="mailto:your.email@example.com"><strong>Email</strong><div class="mini">your.email@example.com</div></a>
-      <div class="link-card"><strong>Certificates</strong><div class="mini">Link your achievements here</div></div>
+      <a class="link-card" href="https://github.com/yourgithub" target="_blank" rel="noopener">
+        <strong>GitHub</strong>
+        <div class="mini">Code repositories & commits</div>
+      </a>
+      <a class="link-card" href="https://deepnote.com/yourprofile" target="_blank" rel="noopener">
+        <strong>Deepnote</strong>
+        <div class="mini">Notebooks & data exploration</div>
+      </a>
+      <a class="link-card" href="https://colab.research.google.com" target="_blank" rel="noopener">
+        <strong>Google Colab</strong>
+        <div class="mini">Interactive ML experiments</div>
+      </a>
+      <a class="link-card" href="https://www.tinkercad.com/" target="_blank" rel="noopener">
+        <strong>Tinkercad</strong>
+        <div class="mini">Circuits & Arduino demos</div>
+      </a>
+      <a class="link-card" href="resume.pdf" target="_blank" rel="noopener">
+        <strong>Resume (PDF)</strong>
+        <div class="mini">One‑page, latest version</div>
+      </a>
+      <a class="link-card" href="mailto:your.email@example.com">
+        <strong>Email</strong>
+        <div class="mini">your.email@example.com</div>
+      </a>
+      <div class="link-card">
+        <strong>Office Hours</strong>
+        <div class="mini">Add your calendar or booking link</div>
+      </div>
+      <div class="link-card">
+        <strong>Certificates/Badges</strong>
+        <div class="mini">Link your achievements here</div>
+      </div>
     </div>
   </section>
 
   <footer class="container">
-    <div class="mini">© <span id="year"></span> Beaver Works · Applied Engineering & AI</div>
+    <div class="mini">© <span id="year"></span> Beaver Works — Applied Engineering & AI · Built with vanilla HTML/CSS/JS. Customize and publish to GitHub Pages.</div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Theme Toggle
+    const root = document.documentElement;
+    const themeBtn = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('theme');
+    if(saved){ document.documentElement.setAttribute('data-theme', saved); }
+    themeBtn.addEventListener('click', ()=>{
+      const next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Typewriter
+    const phrases = [
+      'useful things with code',
+      'Arduino prototypes that blink & think',
+      'ML models that explain themselves',
+      'web apps that feel fast',
+      'data stories that matter'
+    ];
+    let idx = 0, ptr = 0, rev = false;
+    const tw = document.getElementById('typewriter');
+    function tick(){
+      const text = phrases[idx];
+      if(!rev){
+        ptr++;
+        if(ptr === text.length + 6) rev = true;
+      } else {
+        ptr--;
+        if(ptr <= 0){ rev = false; idx = (idx+1) % phrases.length; }
+      }
+      tw.textContent = text.slice(0, Math.max(0, Math.min(ptr, text.length)));
+      setTimeout(tick, rev ? 50 : 80);
+    }
+    tick();
+
+    // Projects Data (edit me!)
+    const projects = [
+      {
+        title: 'Oil Slick Classifier',
+        desc: 'Satellite imagery (Sentinel‑2) classification mini‑pipeline with data preprocessing & model evaluation.',
+        tags: ['ai','data','web'],
+        link: '#',
+        call: 'Open Notebook',
+        thumb: '🛰️'
+      },
+      {
+        title: 'Arduino Smart Sensor',
+        desc: 'Tinkercad circuit + code for reading temperature & light, streaming to a simple web dashboard.',
+        tags: ['hw','web'],
+        link: '#',
+        call: 'View Circuit',
+        thumb: '🔌'
+      },
+      {
+        title: 'Air Quality Explorer',
+        desc: 'Colab + JS map visualizing PM2.5 trends with interactive charts and tooltips.',
+        tags: ['data','web','ai'],
+        link: '#',
+        call: 'Launch Demo',
+        thumb: '🌫️'
+      },
+      {
+        title: 'Micro‑blog Engine',
+        desc: 'Static site blog with Markdown posts, tags, and search — deployable on GitHub Pages.',
+        tags: ['web'],
+        link: '#',
+        call: 'Read Posts',
+        thumb: '📝'
+      },
+      {
+        title: 'Explainable KNN',
+        desc: 'Interactive KNN visualizer for classification regions and nearest neighbor inspection.',
+        tags: ['ai','data'],
+        link: '#',
+        call: 'Try KNN',
+        thumb: '📊'
+      },
+      {
+        title: 'Sensor Logger App',
+        desc: 'PWA that logs accelerometer & gyroscope data for quick experiments and CSV export.',
+        tags: ['web','data'],
+        link: '#',
+        call: 'Open App',
+        thumb: '📱'
+      }
+    ];
+
+    const grid = document.getElementById('projectsGrid');
+    function render(list){
+      grid.innerHTML = '';
+      list.forEach(p => {
+        const el = document.createElement('article');
+        el.className = 'proj fade-in';
+        el.innerHTML = `
+          <div class="thumb" aria-hidden="true" style="font-size:40px">${p.thumb}</div>
+          <div class="proj-body">
+            <h3 style="margin:0 0 6px; font-size:18px">${p.title}</h3>
+            <p style="margin:0 0 10px; color:var(--muted)">${p.desc}</p>
+            <div class="tags">${p.tags.map(t=>`<span class="tag">#${t}</span>`).join('')}</div>
+            <a class="btn" href="${p.link}" target="_blank" rel="noopener">${p.call} →</a>
+          </div>`;
+        grid.appendChild(el);
+      });
+    }
+    render(projects);
+
+    // Filters
+    const chips = Array.from(document.querySelectorAll('.chip'));
+    chips.forEach(ch => ch.addEventListener('click', () => {
+      chips.forEach(c=>c.classList.remove('active')); ch.classList.add('active');
+      const f = ch.dataset.filter;
+      if(f === 'all') return render(projects);
+      render(projects.filter(p => p.tags.includes(f)));
+    }));
+  </script>
 </body>
 </html>
