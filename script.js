@@ -33,25 +33,37 @@ const phrases = [
   'web apps that feel fast',
   'data stories that matter'
 ];
+
 let idx = 0, ptr = 0, rev = false;
 const tw = document.getElementById('typewriter');
 
+// stop time = now + 60s
+const stopAt = Date.now() + 60000;
+
 function tick() {
   const text = phrases[idx];
+
+  // If time is up, freeze on the full current phrase
+  if (Date.now() >= stopAt) {
+    tw.textContent = text;    // show full phrase
+    return;                    // stop scheduling more ticks
+  }
+
+  // normal typewriter logic
   if (!rev) {
     ptr++;
     if (ptr === text.length + 6) rev = true;
   } else {
     ptr--;
-    if (ptr <= 0) {
-      rev = false;
-      idx = (idx + 1) % phrases.length;
-    }
+    if (ptr <= 0) { rev = false; idx = (idx + 1) % phrases.length; }
   }
+
   tw.textContent = text.slice(0, Math.max(0, Math.min(ptr, text.length)));
   setTimeout(tick, rev ? 50 : 80);
 }
+
 tick();
+
 // =======================
 // 🧪 Projects Data
 // =======================
