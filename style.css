@@ -119,7 +119,7 @@ section{padding:32px 24px}
 }
 
 /* PROJECTS */
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;}
+.filters{display:flex;gap:8px;flex-wrap:wrap;}
 .chip{
   padding:8px 12px;border-radius:999px;
   border:1px solid var(--glass-brd);
@@ -170,6 +170,15 @@ footer{padding:32px 24px;color:var(--muted);border-top:1px solid var(--glass-brd
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .fade-in{opacity:0;transform:translateY(8px);animation:fade .6s ease forwards}
 @keyframes fade{to{opacity:1;transform:none}}
+
+/* FIX CHIP TEXT COLOR */
+.chip {
+  color: #e6ede0 !important;
+}
+
+[data-theme="light"] .chip {
+  color: #1a2316 !important;
+}
 
 @media(max-width:980px){
   .hero-grid{grid-template-columns:1fr}
