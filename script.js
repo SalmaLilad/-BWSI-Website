@@ -57,7 +57,7 @@ tick();
 
 setTimeout(() => {
   active = false;
-}, 60000);
+}, 200000);
 
 // =======================
 // 🧪 Projects Data
