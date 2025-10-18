@@ -287,5 +287,8 @@ header.hero .badge {
   transform: translateY(-14px) !important; /* try -10 to -20 */
 }
 #projects .btn {
-  font-size: 16px !important;
+  font-size: 16px;        /* slightly larger text */
+  padding: 12px 22px;     /* enlarge the button box proportionally */
+  border-radius: 10px;    /* smoother edges */
+  transition: transform 0.15s ease;
 }
