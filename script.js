@@ -58,7 +58,7 @@ function tick() {
     if (ptr <= 0) { rev = false; idx = (idx + 1) % phrases.length; }
   }
 
-  tw.innerHTML = `<span class="gradient">${text.slice(0, Math.max(0, Math.min(ptr, text.length)))}</span>`;
+  tw.textContent = text.slice(0, Math.max(0, Math.min(ptr, text.length)));
   setTimeout(tick, rev ? 50 : 80);
 }
 
