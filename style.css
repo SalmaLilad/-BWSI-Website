@@ -292,3 +292,6 @@ header.hero .badge {
   border-radius: 10px;    /* smoother edges */
   transition: transform 0.15s ease;
 }
+.projects .btn:hover {
+  transform: scale(1.05); /* subtle hover enlargement */
+}
