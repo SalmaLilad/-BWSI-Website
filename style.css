@@ -130,9 +130,12 @@ html[data-theme="light"] .badge {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 .h1{font-size:clamp(28px,4vw,44px);line-height:1.1;margin:14px 0 10px;font-weight:900}
-.h1 span.gradient{
-  background:linear-gradient(90deg,var(--brand),var(--brand-2));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
+.h1 span.gradient {
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  background-clip: text;
+  -webkit-background-clip: text;      /* ✅ for Chrome/Safari */
+  color: transparent;                 /* hide normal text color */
+  -webkit-text-fill-color: transparent; /* ✅ actually clips gradient inside letters */
 }
 [data-theme="light"] .h1 span.gradient {
   background: linear-gradient(
@@ -140,6 +143,7 @@ html[data-theme="light"] .badge {
     color-mix(in srgb, var(--brand) 60%, white 40%),
     color-mix(in srgb, var(--brand-2) 60%, white 40%)
   );
+  -webkit-text-fill-color: transparent; /* ensures same clipping */
 }
 .kicker{color:var(--muted);max-width:60ch}
 .cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
