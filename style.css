@@ -134,6 +134,13 @@ html[data-theme="light"] .badge {
   background:linear-gradient(90deg,var(--brand),var(--brand-2));
   -webkit-background-clip:text;background-clip:text;color:transparent;
 }
+[data-theme="light"] .h1 span.gradient {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--brand) 60%, white 40%),
+    color-mix(in srgb, var(--brand-2) 60%, white 40%)
+  );
+}
 .kicker{color:var(--muted);max-width:60ch}
 .cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
 .hero-card{
