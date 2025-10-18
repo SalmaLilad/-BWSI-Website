@@ -287,6 +287,6 @@ header.hero .badge {
   transform: translateY(-14px) !important; /* try -10 to -20 */
 }
 #projects .btn {
-  font-size: 15px;
-  padding: 10px 18px;
+  font-size: 13px;
+  padding: 10px 16px;
 }
