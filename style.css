@@ -121,8 +121,8 @@ html[data-theme="light"] .badge {
 .hero-item{border:1px dashed var(--glass-brd);border-radius:14px;padding:12px;background:var(--glass)}
 .mini{font-size:12px;color:var(--muted)}
 .hero .badge {
-  display: inline-block;
-  margin-top: -10px; /* raise more: try -12px or -16px */
+  position: relative;
+  top: -12px; /* moves badge higher */
 }
 
 /* SECTIONS */
