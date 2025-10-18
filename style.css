@@ -320,3 +320,26 @@ header.hero .badge {
 .projects .btn:hover {
   transform: scale(1.05);
   }
+/* Project buttons, About button, and Featured section buttons */
+.btn-primary,
+.cta .btn,
+.proj a.btn {
+  background: linear-gradient(180deg, rgba(139,69,19,.9), rgba(139,69,19,.7));
+  border: 1px solid rgba(139,69,19,.4);
+}
+
+/* Light mode override - flat light brown */
+[data-theme="light"] .btn-primary,
+[data-theme="light"] .cta .btn,
+[data-theme="light"] .proj a.btn {
+  background: #d7a56d !important; /* flat light brown */
+  border: 1px solid rgba(139,69,19,.2) !important;
+}
+
+/* Ensure hover states work properly */
+[data-theme="light"] .btn-primary:hover,
+[data-theme="light"] .cta .btn:hover,
+[data-theme="light"] .proj a.btn:hover {
+  background: #e0b583 !important; /* slightly lighter brown on hover */
+  border-color: rgba(139,69,19,.3) !important;
+}
