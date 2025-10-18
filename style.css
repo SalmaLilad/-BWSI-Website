@@ -284,3 +284,6 @@ footer{padding:32px 24px;color:var(--muted);border-top:1px solid var(--glass-brd
 @media(max-width:640px){
   .badges-grid { grid-template-columns: 1fr; }
 }
+header.hero .badge {
+  transform: translateY(-14px) !important; /* try -10 to -20 */
+}
