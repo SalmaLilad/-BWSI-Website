@@ -154,10 +154,14 @@ section{padding:32px 24px}
   transition: transform .2s ease, border-color .2s ease;
 }
 .proj:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.28)}
-.thumb{
-  height:160px;
-  background: linear-gradient(135deg, rgba(139,69,19,.22), rgba(44,94,46,.22));
-  display:grid;place-items:center;font-weight:800;
+.thumb {
+  height: 180px;
+  background: linear-gradient(135deg, rgba(139,69,19,.25), rgba(44,94,46,.25));
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 3rem; /* makes icons / emojis larger */
+  color: var(--text);
 }
 .proj-body{padding:14px}
 .tags{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}
