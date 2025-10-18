@@ -300,26 +300,6 @@ footer{padding:32px 24px;color:var(--muted);border-top:1px solid var(--glass-brd
   color: var(--text);
 }
 
-/* Responsive */
-@media(max-width:980px){
-  .badges-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media(max-width:640px){
-  .badges-grid { grid-template-columns: 1fr; }
-}
-header.hero .badge {
-  transform: translateY(-14px) !important;
-}
-#projects .btn {
-  font-size: 16px;
-  padding: 12px 22px;
-  border-radius: 10px;
-  transition: transform 0.15s ease;
-}
-.projects .btn:hover {
-  transform: scale(1.05);
-  }
 /* Project buttons, About button, and Featured section buttons */
 .btn-primary,
 .cta .btn,
@@ -343,3 +323,24 @@ header.hero .badge {
   background: #e0b583 !important; /* slightly lighter brown on hover */
   border-color: rgba(139,69,19,.3) !important;
 }
+
+/* Responsive */
+@media(max-width:980px){
+  .badges-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media(max-width:640px){
+  .badges-grid { grid-template-columns: 1fr; }
+}
+header.hero .badge {
+  transform: translateY(-14px) !important;
+}
+#projects .btn {
+  font-size: 16px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  transition: transform 0.15s ease;
+}
+.projects .btn:hover {
+  transform: scale(1.05);
+  }
