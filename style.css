@@ -320,17 +320,18 @@ header.hero .badge {
 .projects .btn:hover {
   transform: scale(1.05);
 }
-/* 🌞 Light mode button color override */
-[data-theme="light"] .btn-primary,
-[data-theme="light"] .btn,
-[data-theme="light"] .gradient {
-  background: linear-gradient(90deg, #d6a165, #9fd39f); /* lighter tan + soft green */
+/* 🌞 Light mode: make main buttons lighter brown */
+[data-theme="light"] .btn[href="#about"],
+[data-theme="light"] .btn[href="#projects"],
+[data-theme="light"] #themeToggle {
+  background-color: #d6a165;  /* lighter brown */
   color: #fff;
   border: none;
 }
 
-/* optional hover brightness boost */
-[data-theme="light"] .btn-primary:hover,
-[data-theme="light"] .btn:hover {
+/* optional: subtle hover brightness */
+[data-theme="light"] .btn[href="#about"]:hover,
+[data-theme="light"] .btn[href="#projects"]:hover,
+[data-theme="light"] #themeToggle:hover {
   filter: brightness(1.1);
 }
