@@ -320,3 +320,17 @@ header.hero .badge {
 .projects .btn:hover {
   transform: scale(1.05);
 }
+/* 🌞 Light mode button color override */
+[data-theme="light"] .btn-primary,
+[data-theme="light"] .btn,
+[data-theme="light"] .gradient {
+  background: linear-gradient(90deg, #d6a165, #9fd39f); /* lighter tan + soft green */
+  color: #fff;
+  border: none;
+}
+
+/* optional hover brightness boost */
+[data-theme="light"] .btn-primary:hover,
+[data-theme="light"] .btn:hover {
+  filter: brightness(1.1);
+}
