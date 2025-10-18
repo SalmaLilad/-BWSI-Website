@@ -120,9 +120,8 @@ html[data-theme="light"] .badge {
 .hero-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
 .hero-item{border:1px dashed var(--glass-brd);border-radius:14px;padding:12px;background:var(--glass)}
 .mini{font-size:12px;color:var(--muted)}
-.hero .badge {
-  position: relative;
-  top: -12px; /* moves badge higher */
+header.hero .badge {
+  transform: translateY(-14px) !important; /* try -10 to -20 */
 }
 
 /* SECTIONS */
