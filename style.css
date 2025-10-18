@@ -319,18 +319,4 @@ header.hero .badge {
 }
 .projects .btn:hover {
   transform: scale(1.05);
-}
-/* 🌞 Light mode — make key brown buttons lighter */
-[data-theme="light"] a.btn[href="#about"],
-[data-theme="light"] a.btn[href="#projects"],
-[data-theme="light"] .filter-btn.active {
-  background-color: #d6a165; /* lighter brown */
-  color: #fff;
-}
-
-/* optional: slightly brighter on hover */
-[data-theme="light"] a.btn[href="#about"]:hover,
-[data-theme="light"] a.btn[href="#projects"]:hover,
-[data-theme="light"] .filter-btn.active:hover {
-  filter: brightness(1.05);
-}
+  }
