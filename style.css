@@ -127,7 +127,6 @@ html[data-theme="light"] .badge {
   color: transparent;
   display: inline;
 }
-
 [data-theme="light"] .h1 span.gradient {
   background: linear-gradient(90deg, var(--brand), var(--brand-2));
   -webkit-background-clip: text;
@@ -146,7 +145,7 @@ html[data-theme="light"] .badge {
 .hero-item{border:1px dashed var(--glass-brd);border-radius:14px;padding:12px;background:var(--glass)}
 .mini{font-size:12px;color:var(--muted)}
 header.hero .badge {
-  transform: translateY(-14px) !important; /* try -10 to -20 */
+  transform: translateY(-14px) !important;
 }
 
 /* SECTIONS */
@@ -206,7 +205,7 @@ section{padding:32px 24px}
   display: grid;
   place-items: center;
   font-weight: 900;
-  font-size: 3rem; /* makes icons / emojis larger */
+  font-size: 3rem;
   color: var(--text);
 }
 .proj-body{padding:14px}
@@ -309,14 +308,14 @@ footer{padding:32px 24px;color:var(--muted);border-top:1px solid var(--glass-brd
   .badges-grid { grid-template-columns: 1fr; }
 }
 header.hero .badge {
-  transform: translateY(-14px) !important; /* try -10 to -20 */
+  transform: translateY(-14px) !important;
 }
 #projects .btn {
-  font-size: 16px;        /* slightly larger text */
-  padding: 12px 22px;     /* enlarge the button box proportionally */
-  border-radius: 10px;    /* smoother edges */
+  font-size: 16px;
+  padding: 12px 22px;
+  border-radius: 10px;
   transition: transform 0.15s ease;
 }
 .projects .btn:hover {
-  transform: scale(1.05); /* subtle hover enlargement */
+  transform: scale(1.05);
 }
