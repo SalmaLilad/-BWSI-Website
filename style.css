@@ -52,21 +52,29 @@ a{color:inherit;text-decoration:none}
 }
 .nav-wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.logo{
-  width:38px;height:38px;border-radius:12px;
-  display:grid;place-items:center;
-  font-weight:900;
-  background:linear-gradient(135deg,var(--brand),var(--brand-2));
-  color:#fff;
-  box-shadow:var(--shadow);
-}
+
+/* === AI Logo Dynamic Hue === */
 .logo {
-  transition: background 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: #fff;
+  box-shadow: var(--shadow);
+  transition: background 0.5s ease, color 0.5s ease, box-shadow 0.5s ease, filter 0.6s ease;
 }
 
+/* Light mode hue shift + glow */
 [data-theme="light"] .logo {
-  box-shadow: 0 0 12px rgba(44,94,46,0.25);
+  background: linear-gradient(135deg, var(--brand-2), var(--brand)); /* flips hue */
+  color: #1a2316; /* darker text for contrast */
+  filter: hue-rotate(25deg) brightness(1.15); /* subtle hue and brightness shift */
+  box-shadow: 0 0 14px rgba(44, 94, 46, 0.25); /* soft green glow */
 }
+
 .title{font-size:15px;font-weight:700;letter-spacing:.4px}
 .subtitle{font-size:12px;color:var(--muted);margin-top:-6px}
 .nav-actions{display:flex;gap:10px;align-items:center}
