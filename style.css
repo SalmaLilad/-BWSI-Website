@@ -1,9 +1,9 @@
-:root{
+:root {
   --bg: #1a1f16;
   --panel: #232a20;
   --muted: #8a9884;
   --text: #e6ede0;
-  --brand: #8b4513; /* earthy brown */
+  --brand: #8b4513;   /* earthy brown */
   --brand-2: #2c5e2e; /* dark green */
   --ring: 0 0 0 2px rgba(139,69,19,.25);
   --shadow: 0 10px 30px rgba(0,0,0,.35);
@@ -16,8 +16,8 @@
   --panel: #ffffff;
   --muted: #5a6655;
   --text: #1a2316;
-  --brand: #8b4513;
-  --brand-2: #2c5e2e;
+  --brand: #c58b50;   /* lighter, warm tan */
+  --brand-2: #6fb86f; /* soft green */;
   --ring: 0 0 0 2px rgba(139,69,19,.25);
   --shadow: 0 8px 24px rgba(2,6,23,.08);
   --glass: rgba(0,0,0,.03);
@@ -62,21 +62,9 @@ a{color:inherit;text-decoration:none}
   place-items: center;
   font-weight: 900;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
-  color: #fff;
+  color: var(--text);
   box-shadow: var(--shadow);
-  transition: all 0.4s ease;
-}
-
-/* Light mode: softer, lighter gradient like the Student Portfolio badge */
-[data-theme="light"] .logo {
-  background: linear-gradient(
-    135deg,
-    rgba(139, 69, 19, 0.15),
-    rgba(44, 94, 46, 0.15)
-  );
-  color: #1a2316;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: background 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .title{font-size:15px;font-weight:700;letter-spacing:.4px}
@@ -106,7 +94,18 @@ a{color:inherit;text-decoration:none}
   font-weight: 600;
   color: #fff;
   background: linear-gradient(90deg, var(--brand), var(--brand-2));
-  border-radius: 999px;
+  border-radius: 999px;.logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: var(--text);
+  box-shadow: var(--shadow);
+  transition: background 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
   padding: 8px 12px;
   box-shadow: var(--shadow);
   font-size: 12px;
