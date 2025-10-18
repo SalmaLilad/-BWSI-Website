@@ -9,7 +9,6 @@
   --shadow: 0 10px 30px rgba(0,0,0,.35);
   --glass: rgba(255,255,255,.06);
   --glass-brd: rgba(255,255,255,.15);
-  --text-color: var(--text);
 }
 
 [data-theme="light"]{
@@ -23,7 +22,6 @@
   --shadow: 0 8px 24px rgba(2,6,23,.08);
   --glass: rgba(0,0,0,.03);
   --glass-brd: rgba(0,0,0,.08);
-  --text-color: var(--text);
 }
 
 *{box-sizing:border-box}
